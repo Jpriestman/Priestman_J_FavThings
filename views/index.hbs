@@ -1,2 +1,11 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<section id="heroes">
+    <!-- This is a loop with handlebars -->
+    {{#each avatars}}
+        <div class="hero-container">
+            <a href="/{{name}}">
+                <img src="/images/{{avatar}}" alt="avatars">
+            </a>
+            <h3 class="hero-name">{{name}}</h3>
+        </div>
+    {{/each}}
+</section>
